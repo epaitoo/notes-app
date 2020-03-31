@@ -45,7 +45,12 @@ class NoteDetailState extends State<NoteDetail> {
     contentTextController.text = note.content;
 
     return Scaffold(
-      backgroundColor: Color(0xffef5249),
+      backgroundColor: Color(0xffF9020E),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color(0xffF9020E),
+        child: Icon(Icons.import_contacts),
+        onPressed: null
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -182,7 +187,7 @@ class NoteDetailState extends State<NoteDetail> {
 		}
 
     if (result != 0) {  // Success
-			_showAlertDialog('Status', 'Note Saved Successfully. Pull to Refresh');
+			_showAlertDialog('Status', 'Note Added Successfully.');
 		} else {  // Failure
 			_showAlertDialog('Status', 'Problem Saving Note');
 		}
