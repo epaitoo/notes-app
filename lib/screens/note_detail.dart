@@ -1,5 +1,6 @@
 // import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:notes/screens/bible_books.dart';
 import 'package:notes/utils/database_helper.dart';
 import 'package:notes/model/note.dart';
 import 'package:intl/intl.dart';
@@ -35,7 +36,7 @@ class NoteDetailState extends State<NoteDetail> {
     note.content = contentTextController.text;
   }
 
-  // Save data to database
+  
   
 
   @override
@@ -49,7 +50,12 @@ class NoteDetailState extends State<NoteDetail> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color(0xffF9020E),
         child: Icon(Icons.import_contacts),
-        onPressed: null
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => BibleBooks()),
+          );
+        }
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -146,7 +152,7 @@ class NoteDetailState extends State<NoteDetail> {
                         contentPadding: const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 12.0),
                         enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
                         focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                        hintText: "Content Text",
+                        hintText: "Content",
                         hintStyle: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w500,
