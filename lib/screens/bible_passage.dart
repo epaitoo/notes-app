@@ -34,7 +34,7 @@ class _ShowBiblePassageState extends State<ShowBiblePassage> {
         'content-type': 'text',
       };
 
-      var uri = Uri.https('api.scripture.api.bible', 'v1/bibles/de4e12af7f28f599-01/verses/$verseId', queryParameters);
+      var uri = Uri.https('api.scripture.api.bible', 'v1/bibles/06125adad2d5898a-01/verses/$verseId', queryParameters);
 
       // String url = 'https://api.scripture.api.bible/v1/bibles/bibleId/verses/verseId';
       
@@ -71,9 +71,13 @@ class _ShowBiblePassageState extends State<ShowBiblePassage> {
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     return Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(15.0),
                       child: Container(
-                        child: Text(passage.content, style: TextStyle(fontSize: 20.0),),
+                        child: Text(
+                          passage.content, 
+                          style: TextStyle(fontSize: 20.0),
+                          textAlign: TextAlign.justify,
+                        ),
                       ),
                     );
                   } else if (snapshot.hasError) {

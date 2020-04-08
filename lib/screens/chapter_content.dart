@@ -29,7 +29,7 @@ class _ShowChapterContentState extends State<ShowChapterContent> {
         'content-type': 'text',
       };
 
-      var uri = Uri.https('api.scripture.api.bible', 'v1/bibles/de4e12af7f28f599-01/chapters/$chapterId', queryParameters);
+      var uri = Uri.https('api.scripture.api.bible', 'v1/bibles/06125adad2d5898a-01/chapters/$chapterId', queryParameters);
 
       
       final response = await http.get(uri, headers: {'api-key': '7d076034f25e7b8256cec170c136caca', 'Accept': 'application/json'});
@@ -86,10 +86,16 @@ class _ShowChapterContentState extends State<ShowChapterContent> {
                         ),
                         Expanded(
                             child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(15.0),
                             child: Container(
                               child: SingleChildScrollView(
-                                child: Text(passage, style: TextStyle(fontSize: 20.0),)
+                                child: Text(
+                                  passage, 
+                                  style: TextStyle(
+                                    fontSize: 20.0
+                                  ),
+                                  textAlign: TextAlign.justify,
+                                )
                               ),
                             ),
                           ),

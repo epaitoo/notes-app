@@ -19,7 +19,7 @@ class _BibleBooksState extends State<BibleBooks> {
 
   Future<List<Data>> getBooks() async {
     List<Data> list;
-    String url = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/books';
+    String url = 'https://api.scripture.api.bible/v1/bibles/06125adad2d5898a-01/books';
 
     final response = await http.get(url, headers: {'api-key': '7d076034f25e7b8256cec170c136caca', 'Accept': 'application/json'});
 

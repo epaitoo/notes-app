@@ -32,7 +32,7 @@ class _VerseListState extends State<VerseList> {
      Future<List<Verses>> getVerses() async {
       List<Verses> verseList;
 
-      String url = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/chapters/$chapterId/verses';
+      String url = 'https://api.scripture.api.bible/v1/bibles/06125adad2d5898a-01/chapters/$chapterId/verses';
 
       final response = await http.get(url, headers: {'api-key': '7d076034f25e7b8256cec170c136caca', 'Accept': 'application/json'});
 
