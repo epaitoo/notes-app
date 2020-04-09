@@ -1,15 +1,22 @@
-# notes
+# Notes
 
-A new Flutter project.
+A note taking mobile app with a Bible Feature to view Bible Chapters and Verses. This is an app I built for my personal use at church because I take lots of notes at church during sermon.
+
+## Features
+- Create, read, update and delete notes
+- A local Sqflite database which store notes locally within the device
+- A bible feature to view Bible chapters and verses as you take your notes.
+- Interaction with a [BIBLE API](https://scripture.api.bible/) to display bible books, chapters and verses.
+
+## Demo
+![notes-app](https://media.giphy.com/media/fUT5S8mPPCSRROXsKO/giphy.gif)
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Clone or download the project
+- Move to the project directory and run `flutter pub get` in your terminal or from Android Studio
+- Run `flutter run` to run the project in your emulator
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
