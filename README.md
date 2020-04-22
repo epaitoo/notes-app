@@ -11,6 +11,9 @@ A note taking mobile app with a Bible Feature to view Bible Chapters and Verses.
 ## Demo
 ![notes-app](https://media.giphy.com/media/fUT5S8mPPCSRROXsKO/giphy.gif)
 
+## APK FILE Download
+[Download here](http://www.mediafire.com/file/04x97qjq4nsqhwb/notes.apk/file)
+
 
 ## Getting Started
 
